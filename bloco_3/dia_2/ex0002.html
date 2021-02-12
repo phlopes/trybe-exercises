@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-HTML</title>
     <style>
+       body {
+           font-size: 16px;
+           background-color: rgb(255, 223, 197);
+       }
+       
         h1 {
             font-size: 65px;
-            color:orange
+            color:orange;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height:0vmin;
+            text-align: center;
+            text-decoration: underline black ;
+        
         }
 
-        ul {
-            background-color:rgb(162, 195, 207) ;
+        ul { background-color:rgb(162, 195, 207) ;   
+    
+            
         }
 
         .color_p_ul {
             background-color: rgb(162, 195, 207) ;
+            
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        #Amarelo {
+            color: yellow;
+        }
+
+        #Vermelho {
+            color: red;
+        }
+
+        #Marrom {
+            color: maroon;
         }
     </style>
 </head>
@@ -23,9 +52,9 @@
     <h1>Exercícios 3.2</h1>
     <p class="color_p_ul">Qual é a sua cor favorita?</p>
     <ul class="color_p_ul">
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrrom</li>
+        <li id="Amarelo">Amarelo</li>
+        <li id="Vermelho">Vermelho</li>
+        <li id="Marrom">Marrrom</li>
     </ul>
 </body>
-</html>
+</html> 
