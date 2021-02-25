@@ -1,5 +1,5 @@
-var a = 10;
-var b = 5;
+let a = 10;
+let b = 5;
 
 soma = a+b;
     console.log('Soma: '+soma);
