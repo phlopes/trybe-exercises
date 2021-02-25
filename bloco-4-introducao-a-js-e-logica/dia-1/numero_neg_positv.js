@@ -1,7 +1,9 @@
-let numero = -100;
+let numero = -10;
 
 if(numero < 0){
     console.log (numero + ' é um numero negativo');
-} else {
+} else if (numero > 0){
     console.log (numero + ' é um numero positivo');
+} else {
+    console.log ('ZERO');
 }
