@@ -15,3 +15,4 @@ let noEmergencyTasks = document.querySelectorAll('.no-emergency-tasks h3');
     for (let i = 0; i < noEmergencyTasks.length; i += 1) {
         noEmergencyTasks[i].style.backgroundColor = 'black';
     }
+    
