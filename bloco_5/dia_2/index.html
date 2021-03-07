@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let tagH1 = document.createElement('h1')
+      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(tagH1);
+
+      let tagDiv = document.createElement('div');
+      tagDiv.className = 'main-content';
+      document.body.appendChild(tagDiv);
+
+      let tagDiv2 = document.createElement('div');
+      tagDiv2.className = 'center-content';
+      tagDiv.appendChild(tagDiv2);
+
+      let tagP = document.createElement('p');
+      tagP.innerText = "lorem ipsum dolor sit amet consectetur adipiscing elit lacinia ad nec ultrices id leo libero rhoncus lectus fames dapibus mi pellentesque nibh placerat dui sodales faucibus phasellus netus enim mauris feugiat pharetra nostra velit conubia est fusce ridiculus porttitor at a convallis imperdiet neque torquent fringilla curae habitasse aliquam facilis"
+      tagDiv2.appendChild(tagP);
+
+      let tagDiv3 = document.createElement('div');
+      tagDiv3.className = 'left-content';
+      tagDiv.appendChild(tagDiv3);
+
+      let tagDiv4 = document.createElement('div');
+      tagDiv4.className = 'right-content';
+      tagDiv.appendChild(tagDiv4);
+
+      let img = document.createElement('img');
+      img.src = 'https://picsum.photos/200'
+      img.className = 'small-image';
+
+      let lista = document.createElement('ul');
+      tagDiv4.appendChild(lista)
+      
+      let array = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+      for (let num in array) {
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = array[num];
+        lista.appendChild(elementLi)
+      }
+
+      for (let i = 1; i <= 3; i += 1) { 
+        let tagH3 = document.createElement('h3')
+        tagH3.innerHTML = "Show" + i;
+        tagDiv.appendChild(tagH3);
+     }
+    
+     tagH1.className = 'title'; 
+
+     let description = document.getElementsByTagName('h3');
+        for (let i = 0; i < 3; i += 1) {
+            description[i].className = 'description';
+        }
+    
+    let removDiv = document.querySelector('.left-content');
+    tagDiv.removeChild(removDiv)
+
+    let centerDiv = document.querySelector('.right-content');
+    centerDiv.style.marginRight = 'auto'
+
+    let colorDiv = document.querySelector('.main-content');
+    colorDiv.style.backgroundColor = "green"
+
+    lista.lastChild.remove();
+    lista.lastChild.remove();
+
+   
+
+    
+    </script>
+  </body>
+</html>
