@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Dados Pessoias</legend>
+            <div>
+                <label for="Tnome">Nome:</label>
+                <input type="text" name="nome" id="Tnome" maxlength="40" required>
+            </div>
+
+            <div>
+                <label for="Temail">Email: </label> <input type="text" name="email" id="Temail" maxlength="50" required>
+            </div>
+
+            <div>
+                <label for="Tcpf">CPF: </label><input type="text" name="cpf" id="Tcpf" maxlength="11" required>
+            </div>
+
+            <div>
+                <label for="Tendereco">Endereço: </label><input type="text" name="endereco" id="Tendereco"
+                    maxlength="28" required>
+            </div>
+
+            <div>
+                <label for="estadosbr">Estado</label>
+                <select name="estados" id="estadosbr" required>
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" name="casa-apto" id="casaapto" required>
+                <label for="Tcasa">Casa</label>
+                <input type="radio" name="casa-apto" id="Tapto" required> <label for="Tapto">Apartamento</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Último Emprego</legend>
+            <div>
+                <textarea name="curriculo" id="Tcurriculo" cols="30" rows="10" maxlength="1000" required
+                    placeholder="Resumo do currículo - Máximo 1000 caracteres.">
+                </textarea>
+            </div>
+
+            <div>
+                <label for="Tcargo">Cargo: </label><input type="text" name="cargo" id="Tcargo" maxlength="40" required>
+            </div>
+
+            <div>
+                <label for="Tdescricaocargo">Descrição do Cargo: </label>
+                <input type="text" name="descricaocargo" id="Tdescricaocargo" maxlength="500" required width="10px">
+            </div>
+
+            <div>
+                <label for="ini-date">Data de início: </label>
+                <input type="date" class="ini-data" name="Tini-date" required>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="button-send">Enviar Form</button>
+        <button type="button" class="button-clear">Reset Form</button>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
