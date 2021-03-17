@@ -46,3 +46,8 @@ let clear = document.querySelector('.button-clear');
         textArea.value = ''
     }
     });
+
+    document.getElementById('ini-data').DatePickerX.init();
+
+    
+    
