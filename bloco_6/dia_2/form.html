@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/DatePickerX.min.css">
+  <script src="js/DatePickerX.min.js"></script>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+  <link rel="stylesheet" href="node_modules/just-validate/dist/css/justValidateTooltip.min.css">
+</head>
+<header>
+  <h1 class="title is-1">Formulário</h1>
+</header>
+
+<body>
+  <form action="" method="GET" id="form">
+
+    <p class="label">Dados Pessoais</p>
+    <div class="field">
+      <label class="label" for="Tnome">Nome:</label>
+      <div class="control">
+        <input class="input is-info is-small" type="text"  id="name" name="Tname" maxlength="40" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="Temail">Email: </label>
+      <div class="control">
+        <input class="input is-info is-small" type="text" name="email" id="Temail" maxlength="50" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="Tcpf">CPF: </label>
+      <div class="control">
+        <input class="input is-info is-small" type="text" name="cpf" id="Tcpf" maxlength="11" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="Tendereco">Endereço: </label>
+      <div>
+        <input class="input is-info is-small" type="text" name="endereco" id="Tendereco" maxlength="28" required>
+      </div>
+    </div>
+
+    <div>
+      <label class="label" for="estadosbr">Estado</label>
+      <div class="select is-info is-small"> <select name="estados" id="estadosbr" >
+        </select></div>
+    </div>
+    <br>
+    <div class="control">
+      <label class="radio" for="Tcasa">
+        <input type="radio" name="casa-apto" id="Tcasa" required>
+        Casa
+      </label>
+      <label class="radio" for="Tapto">
+        <input type="radio" name="casa-apto" id="Tapto" required>
+        Apto
+      </label>
+    </div>
+    <br>
+
+
+    <p class="label"> Dados Último Emprego</p>
+    <div>
+      <textarea class="textarea is-info is-small" name="curriculo" id="Tcurriculo" cols="30" rows="10" maxlength="1000"
+        placeholder="Resumo do currículo - Máximo 1000 caracteres.">
+                </textarea>
+    </div>
+
+    <div class="field">
+      <label class="label" for="Tcargo">Cargo: </label>
+      <div class="control">
+        <input class="input is-info is-small" type="text" name="cargo" id="Tcargo" maxlength="40" required >
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="Tdescricaocargo">Descrição do Cargo: </label>
+      <div class="control">
+        <input class="input is-info is-small" type="text" name="descricaocargo" id="Tdescricaocargo" maxlength="500" required
+           width="10px">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="ini-date">Data de início: </label>
+      <div class="control">
+        <input class="input is-info is-small" type="text" id="ini-data" name="Tini-date" required >
+      </div>
+    </div>
+
+
+    <button class="button is-info is-small button-send" type="submit">Enviar Form</button>
+    <button class="button is-info is-small button-clear" type="button">Reset Form</button>
+  </form>
+
+  <div class="form">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

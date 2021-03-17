@@ -1,0 +1,15 @@
+body {
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+    font-family: 'Helvetica', 'Arial', 'Sans-serif';
+    background-color: rgba(247, 247, 247, 0.884);
+    max-width: 70%;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+
+header {
+    margin-bottom: 20px;
+}
