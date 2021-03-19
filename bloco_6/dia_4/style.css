@@ -42,10 +42,6 @@ body {
   margin-right: 10px;
 }
 
-.menu-container > li:nth-child(3) {
-  order: 1;
-}
-
 @media screen and (min-width: 768px) {
 .menu-container {
    flex-basis: 100%;
