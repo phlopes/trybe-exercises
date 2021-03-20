@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#chapters {
+  display: none;
+}
+
+#information {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+body {
+  margin:15px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(193, 215, 255);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#chapters-ul {
+  display: none;
+}
+
+#chapters {
+  display: none;
+}
+#chapters:checked ~ #chapters-ul {
+  display: inline;
+}
+
+#information-ul {
+  display: none;
+}
+
+#information {
+  display: none;
+}
+
+#information:checked ~ #information-ul {
+ display: inline;
+}
+
+.nav-menu {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ height: 100px;
+
+}
+
+}
