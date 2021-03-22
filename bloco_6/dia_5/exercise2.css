@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#chapters, #information {
+  display: none;
+}
+
+
+@media screen and (min-width:376px) {
+  #chapter, #info {
+  display: none;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  body {
+    margin:15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(193, 215, 255);
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #chapters-ul {
+    display: none;
+  }
+
+  #chapters {
+    display: none;
+  }
+
+  #chapters:checked ~ #chapters-ul {
+    display: inline;
+  }
+
+  #information-ul {
+    display: none;
+  }
+
+  #information {
+    display: none;
+  }
+
+  #information:checked ~ #information-ul {
+    display: inline;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: rgb(193, 215, 255);
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background: rgb(193, 215, 255);
+    margin: 50px;
+    font-size: 25px;
+  }
+
+  .chaptersInfo-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin-top: 50px;
+  }
+
+  .main-content {
+    font-size: 28px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content p {
+    text-align: left;
+  }
+
+  footer {
+    width: 1000px;
+  }
+}
